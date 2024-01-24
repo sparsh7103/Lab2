@@ -26,7 +26,6 @@ class EmployeeTable:
         else:
             print("Invalid sorting key")
 
-# Sample data
 employees_data = [
     Employee("161E90", "Ramu", 35, 59000),
     Employee("171E22", "Tejas", 30, 82100),
@@ -34,13 +33,10 @@ employees_data = [
     Employee("152K46", "Jaya", 32, 85000),
 ]
 
-# Creating EmployeeTable object
 employee_table = EmployeeTable(employees_data)
 
-# User input for sorting key
 sorting_key = int(input("Enter sorting parameter (1. Age, 2. Name, 3. Salary): "))
 
-# Sorting and displaying the table
 employee_table.sort_table(sorting_key)
 print("\nSorted Employee Table:")
 employee_table.display_table()
